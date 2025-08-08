@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="RapidStock.png">
+  <title>RapidStock</title>
+</head>
+<body>
+  <h1>RapidStock</h1>
+  <section class="block">
+    </br>
+    <h2>&nbsp;Add My Criteria&nbsp;</h2>
+    <div class="flex criteria-form">
+      <input list="criteria-list" id="crit" placeholder="&nbsp;Criteria...&nbsp;" />
+      <datalist id="criteria-list">
+        <option value="Company Name">
+        <option value="Price (EUR)">
+        <option value="Country">
+        <option value="Continent">
+        <option value="Economic Groups">
+        <option value="Sector">
+        <option value="Industry">
+        <option value="Market Cap">
+        <option value="Enterprise Value">
+        <option value="Current Share Class">
+        <option value="Shares Outstanding">
+        <option value="Shares Change (YoY)">
+        <option value="Shares Change (QoQ)">
+        <option value="Owned by Insiders (%)">
+        <option value="Owned by Institutions (%)">
+        <option value="Float">
+        <option value="PE Ratio">
+        <option value="Forward PE">
+        <option value="PS Ratio">
+        <option value="PB Ratio">
+        <option value="P/TBV Ratio">
+        <option value="P/FCF Ratio">
+        <option value="P/OCF Ratio">
+        <option value="PEG Ratio">
+        <option value="EV / Earnings">
+        <option value="EV / Sales">
+        <option value="EV / EBITDA">
+        <option value="EV / EBIT">
+        <option value="EV / FCF">
+        <option value="Current Ratio">
+        <option value="Quick Ratio">
+        <option value="Debt / Equity">
+        <option value="Debt / EBITDA">
+        <option value="Debt / FCF">
+        <option value="Interest Coverage">
+        <option value="Return on Equity (ROE)">
+        <option value="Return on Assets (ROA)">
+        <option value="Return on Invested Capital (ROIC)">
+        <option value="Return on Capital Employed (ROCE)">
+        <option value="Revenue Per Employee">
+        <option value="Profits Per Employee">
+        <option value="Employee Count">
+        <option value="Asset Turnover">
+        <option value="Inventory Turnover">
+        <option value="Income Tax">
+        <option value="Effective Tax Rate">
+        <option value="Beta (5Y)">
+        <option value="52-Week Price Change">
+        <option value="50-Day Moving Average">
+        <option value="200-Day Moving Average">
+        <option value="Relative Strength Index (RSI)">
+        <option value="Average Volume (20 Days)">
+        <option value="Short Interest">
+        <option value="Short Previous Month">
+        <option value="Short % of Shares Out">
+        <option value="Short % of Float">
+        <option value="Short Ratio (days to cover)">
+        <option value="Revenue">
+        <option value="Gross Profit">
+        <option value="Operating Income">
+        <option value="Pretax Income">
+        <option value="Net Income">
+        <option value="EBITDA">
+        <option value="EBIT">
+        <option value="Earnings Per Share (EPS)">
+        <option value="Cash & Cash Equivalents">
+        <option value="Total Debt">
+        <option value="Net Cash">
+        <option value="Net Cash Per Share">
+        <option value="Equity (Book Value)">
+        <option value="Book Value Per Share">
+        <option value="Working Capital">
+        <option value="Operating Cash Flow">
+        <option value="Capital Expenditures">
+        <option value="Free Cash Flow">
+        <option value="FCF Per Share">
+        <option value="Gross Margin">
+        <option value="Operating Margin">
+        <option value="Pretax Margin">
+        <option value="Profit Margin">
+        <option value="EBITDA Margin">
+        <option value="EBIT Margin">
+        <option value="FCF Margin">
+        <option value="Dividend Per Share">
+        <option value="Dividend Yield">
+        <option value="Dividend Growth (YoY)">
+        <option value="Years of Dividend Growth">
+        <option value="Payout Ratio">
+        <option value="Buyback Yield">
+        <option value="Shareholder Yield">
+        <option value="Earnings Yield">
+        <option value="FCF Yield">
+      </datalist>
+      <select id="op">
+        <option value=">">&nbsp;>&nbsp;</option>
+        <option value="<">&nbsp;<&nbsp;</option>
+        <option value=">=">&nbsp;≥&nbsp;</option>
+        <option value="<=">&nbsp;≤&nbsp;</option>
+        <option value="==">&nbsp;=&nbsp;</option>
+        <option value="!=">&nbsp;≠&nbsp;</option>
+        <option value="contains">&nbsp;contains&nbsp;</option>
+      </select>
+      <input list="values-list" id="val" placeholder="&nbsp;Value...&nbsp;" />
+      <datalist id="values-list"></datalist>
+      <button id="addCrit">+</button>
+    </div>
+    <h2>&nbsp;My Criteria&nbsp;</h2>
+    <div id="crits" class="flex">
+      <p class="hint">&nbsp;No criteria&nbsp;</p>
+    </div>
+    </br>
+  </section>
+  <section class="flex actions">
+    <button id="filterBtn">&nbsp;Filter&nbsp;</button>
+    <button id="clearBtn">&nbsp;Clear&nbsp;</button>
+  </section>
+  <div id="results"></div>
+</body>
+</html>
