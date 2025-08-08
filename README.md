@@ -1,8 +1,8 @@
-# RapiStock - Advanced Stock Screener
+# RapidStock - Advanced Stock Screener
 
 A comprehensive web-based stock screening application that allows you to filter and analyze stocks from global markets using multiple financial criteria. The application scrapes data from [stockanalysis.com](https://stockanalysis.com) and provides a user-friendly interface to search through thousands of stocks.
 
-![RapiStock Interface](RapidStock.png)
+![RapidStock Interface](RapidStock.png)
 
 ## Features
 
@@ -68,7 +68,7 @@ The server will start on `http://localhost:5000` by default.
 
 ### 5. Open Your Browser
 
-Navigate to `http://localhost:5000` to access the RapiStock interface.
+Navigate to `http://localhost:5000` to access the RapidStock interface.
 
 ## Usage Guide
 
